@@ -1,0 +1,56 @@
+.stats-section {
+    padding: 110px 20px 70px 20px;
+    background-color: rgb(249, 249, 249);;
+    text-align: center;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0026d3; /* Синій */
+    margin-bottom: 10px;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 200px;
+  }
+
+  .stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0026d3;
+    margin-bottom: 10px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .stat-number.faded {
+    opacity: 0.3;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .stat-number.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .stat-suffix {
+    opacity: 1; /* завжди повна яскравість */
+  }
+  

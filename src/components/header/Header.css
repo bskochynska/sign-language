@@ -1,0 +1,442 @@
+/* .signlang__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.signlang__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.signlang__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.signlang__header-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+.signlang__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signlang__header-image img {
+    width: 480px;
+    height: 620px;
+    border-radius: 70px;
+}
+
+.signlang__detect-nav-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 10px solid white;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .signlang__header {
+        flex-direction: column;
+    }
+
+    .signlang__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .signlang__header {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .signlang__header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .signlang__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .signlang__header-image img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 490px) {
+    .signlang__header-content h1 {
+        font-size: 27px;
+        line-height: 48px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .signlang__header-content p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .signlang__header-content__input input,
+    .signlang__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+} */
+
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color:  rgb(249, 249, 249);
+    z-index: 1;
+  }
+
+  .header-text p{
+    line-height: 1.6;
+  }
+
+  
+  @media (min-width: 1024px) {
+    .header-section {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin-top: 35px;
+    }
+  }
+
+
+  @media (min-width: 1300px) {
+    .header-section {
+      margin-top: 75px;
+    }
+  }
+  
+  
+  .header-text {
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .header-text {
+      text-align: left;
+      padding: 20px 10px 0 20px;
+      width: 50%;
+    }
+  }
+  
+  .header-text h1 {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .header-text .blue {
+    color: #1e3aff;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .header-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    
+  }
+  
+  @media (min-width: 640px) {
+    .header-actions {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .header-text h1 {
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 20px;
+      }
+  }
+
+  @media (min-width: 600px) {
+    .header-text h1 {
+        font-size: 45px;
+      }
+
+      .moto-wrapper span {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .brand-button {
+        font-size: 19px;
+    }
+  }
+  
+  .phone-box {
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    font-size: 16px;
+  }
+  
+  .brand-button {
+    color: #1e3aff;
+    background-color: white;
+    padding: 20px 20px 20px 35px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: background-position 0.3s ease;
+    text-transform: uppercase;
+            background-image: url('../../../public/icon-btn-arrow-1-mob.svg'), url('../../../public/icon-btn-arrow-2-mob.svg'), url('../../../public/icon-btn-arrow-3-mob.svg'), url('../../../public/icon-btn-arrow-4-mob.svg');
+            background-position: top left, top right, bottom right, bottom left;
+            background-repeat: no-repeat;
+  }
+
+  .brand-button svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .brand-button:hover {
+    background-position: 
+      5% 5%,   /* рух від top left до центру */
+      95% 5%,   /* рух від top right до центру */
+      95% 95%,   /* рух від bottom right до центру */
+      5% 95%;   /* рух від bottom left до центру */
+  }
+  
+  .header-image {
+    flex: 1;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (min-width: 1024px) {
+    .header-image {
+      margin-top: 0;
+    }
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certificates {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .certificates img {
+    height: 40px;
+  }
+  
+  .certificates p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    z-index: 10000;
+  }
+
+  .left-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-image: url('../../../public/left-image.jpeg'); /* ⚠️ заміни шлях на свій */
+    background-size: cover;
+    background-position: center right;
+    z-index: 0;
+    display: none;
+  }
+  
+
+
+  .moto-wrapper {
+    width: 275px;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .moto-wrapper span {
+    font-size: 17px;
+    font-weight: 600;
+
+  }
+
+  .header-image::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%; /* можна змінити */
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    pointer-events: none; /* щоб не блокувати кліки по картинці */
+    z-index: 1;
+  }
+
+  @media (min-width: 600px) {
+    .header-text h1 {
+        font-size: 45px;
+      }
+    }
+
+  @media (min-width: 700px) {
+
+      .moto-wrapper span {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .brand-button {
+        font-size: 19px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+
+    .header-text h1 {
+        font-size: 55px;
+    }
+
+    .left-decoration {
+        display: block;
+      }
+  
+      .main-image {
+          display: block;
+          height: 100%;
+      }
+  
+      .header-image {
+          height: 100%;
+          margin-bottom: 0;
+        }
+    
+      .header-section {
+
+        position: relative;
+        padding-left: 200px;
+        padding-bottom: 0; /* щоб контент не ліз на картинку */
+        height: 500px;
+        align-items: start;
+      }
+
+      .header-actions {
+        right: -10%;
+        bottom: -36%;
+        z-index: 10000000;
+        position: absolute;
+      }
+
+      .header-text h1 {
+        font-size: 65px;
+        padding-right: 30px;
+        padding-left: 45px;
+      }
+      .header-text {
+        padding-right: 50px;
+        position: relative;
+      }
+
+      .header-text p{
+       font-size: 20px;
+       padding-left: 45px;
+      }
+
+      .brand-button {
+        font-family: 'Basis Grotesque Pro';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+        height: 110px;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 20px 20px 20px 35px;
+      }
+   
+     
+  }
+
+
+  @media (min-width: 1000px) {
+
+      .brand-button svg {
+        width: 31px;
+        height: 31px;
+      }
+  }

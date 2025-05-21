@@ -1,0 +1,29 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: local('Basis Grotesque Pro Regular'), local('BasisGrotesquePro-Regular'),
+        url('../src/assests/fonts/BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+  --font-family: 'Basis Grotesque Pro', sans-serif;
+  --gradient-text: #0000c4;
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #f07458;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  

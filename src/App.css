@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.main-content {
+    padding-top: 100px;
+    
+  }
+
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: local('Basis Grotesque Pro Regular'), local('BasisGrotesquePro-Regular'),
+        url('../src/assests/fonts/BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Basis Grotesque Pro';
+
+}
+/* 
+body {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+} */
+
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px; /* Товщина лінії */
+    background-color: #FF5733; /* Колір лінії */
+    width: 0%; /* Початкова ширина */
+    z-index: 9999;
+    transition: width 0.25s ease-out;
+  }
+
+::-webkit-scrollbar {
+    width: 0px; /* Зменшуємо ширину вертикального скролбару до нуля */
+    height: 0px; /* Зменшуємо висоту горизонтального скролбару до нуля */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Прозорий фон треку */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Прозорий повзунок */
+  }
+
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+
+/* .gradient__bg {
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    rgb(2, 66, 134) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+ 
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+ 
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+} */
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+  padding: 4rem 3rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}
+
+.overlay-gallery {
+    margin-top: -300px;
+    position: relative;
+    z-index: 2;
+  }

@@ -1,0 +1,16 @@
+@use "./variables";
+
+.signlang_navlinks_container a:hover {
+    color: $blue;
+  }
+
+.gesture_alphabet-link:hover {
+    background-color: $blue;
+}
+
+.signlang__navbar-menu_container.fullscreen-menu {
+    background: $blue;
+  }
+  
+
+

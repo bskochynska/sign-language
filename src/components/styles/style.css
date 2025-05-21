@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.signlang_navlinks_container a:hover {
+  color: #0E19D7;
+}
+
+.gesture_alphabet-link:hover {
+  background-color: #0E19D7;
+}
+
+.signlang__navbar-menu_container.fullscreen-menu {
+  background: #0E19D7;
+}
+
+.scroll-progress-bar {
+  background-color: #0E19D7;
+  z-index: 1000000; /* Колір лінії */
+}
+
+.modal-content {
+  background: #0E19D7;
+}
+
+.close-btn {
+  color: #0E19D7;
+}
+
+.close-btn:hover {
+  background: black;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

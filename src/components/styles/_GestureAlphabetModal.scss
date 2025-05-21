@@ -1,0 +1,15 @@
+@use "./variables";
+
+.modal-content {
+    background: $blue;
+  }
+
+  .close-btn {
+    color: $blue;
+  }
+  
+  .close-btn:hover {
+    background: black;
+    color: white;
+  }
+  

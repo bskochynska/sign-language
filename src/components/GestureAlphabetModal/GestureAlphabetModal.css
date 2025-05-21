@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: local('Basis Grotesque Pro Regular'), local('BasisGrotesquePro-Regular'),
+        url('../../assests/fonts/BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000000000000;
+  }
+  
+  .modal-content {
+    padding: 2rem;
+    border-radius: 12px;
+    width: 80%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    z-index: 10000000000000;
+  }
+
+  .modal-content-headline {
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+    margin-top: 1rem;
+  }
+  
+  .alphabet-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+@media (min-width: 350px) {
+    .alphabet-item img {
+      height: 160px;
+    }
+  }
+
+  @media (min-width: 420px) {
+    .alphabet-item img {
+      height: 190px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .alphabet-item img {
+      height: 160px;
+    }
+  }
+
+  @media (min-width: 845px) {
+    .alphabet-item img {
+      height: 175px;
+    }
+  }
+
+  @media (min-width: 930px) {
+    .alphabet-item img {
+      height: 160px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .alphabet-item img {
+      height: 170px;
+    }
+  }
+
+  @media (min-width: 1075px) {
+    .alphabet-item img {
+      height: 165px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    .alphabet-item img {
+      height: 155px;
+    }
+  }
+
+
+.alphabet-item img:hover {
+  filter: invert(1);
+  cursor: pointer;
+}
+  
+  .close-btn {
+    margin-top: 1rem;
+    padding: 8px 16px;
+    background: #0E19D7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .close-btn {
+    font-family: 'Basis Grotesque Pro';
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    color:#0E19D7;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(14, 25, 215, 0.4);
+  }
+  
